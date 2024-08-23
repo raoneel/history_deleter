@@ -2,9 +2,8 @@ const btnClear = document.getElementById("btnClear");
 const btnDryRun = document.getElementById("btnDryRun");
 const log = document.getElementById("log");
 
-// Start time is 2 years ago
-// TODO: Make this configurable
-const startTime = new Date().getTime() - 2 * 365 * 24 * 60 * 60 * 1000;
+// Start time is 20 years ago to cover all history.
+const startTime = new Date().getTime() - 20 * 365 * 24 * 60 * 60 * 1000;
 
 function deleteWithQueryPromise(query) {
   return new Promise((resolve, reject) => {
